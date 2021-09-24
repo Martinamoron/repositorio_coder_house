@@ -1,0 +1,256 @@
+/* Globales */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(250, 210, 210);
+}
+/* Header */
+.menu{
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: space-around; 
+    font-size: 20px;
+    margin-top: 10px;
+}
+.menu__Logo{
+    display: flex;
+    justify-content: flex-start;
+    width:120px;
+    padding-right: 5px; 
+}
+.menu__Secciones{
+    display: flex;
+    justify-content: space-evenly; 
+    width: 1000px;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.menu__Secciones a:visited{
+    color: rgb(135, 11, 64);
+
+}
+/* Footer */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    margin-top: 10%;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Heebo', sans-serif;
+   
+}
+.footer__Informacion{
+    color: #870b40; 
+}
+.footer__RRSS{
+    padding-right: 10px;
+}
+img.redes{
+    float: right;
+    width: 30px;
+    padding-left: 10px;
+}
+/* Home */
+.home__Slogan{
+    color: #360018;
+    text-align: center;
+    background-image: url(./IMG/banner1.jpg.svg);
+    background-size: cover;
+    height: 200px;
+    position: relative;
+    font-size: 20px;
+    animation: AnimationName 59s ease infinite;
+}
+@keyframes AnimationName {
+    0%{background-position:53% 0%}
+    50%{background-position:48% 100%}
+    100%{background-position:53% 0%}
+}
+#Slogan{
+    width: auto;
+    margin-left: 300px;
+    position: absolute;
+    top: 40%;
+    font-family: "Open Sans", serif;
+}
+.home__Titulo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #360018;
+    font-family: 'Heebo', sans-serif;
+    background-image: linear-gradient(to bottom, #870b40 ,rgb(250, 210, 210));
+    font-size: 25px;
+}
+.home__Destacado{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: #870b40;
+    font-size: 13px;
+    font-family: "Open Sans", serif;
+}
+.home__Destacado h2{
+    width: 40%;
+    line-height: 45px;
+    text-align: justify;
+    font-family: 'Heebo', sans-serif;
+}
+
+/* Productos */
+
+.textos{
+    color: whitesmoke;
+    margin-bottom: 10px;
+    font-family: 'Heebo', sans-serif;
+}
+.textos__Titulo{
+    display: flex;
+    justify-content: center;
+    background-color: #870b40 ;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: "Open Sans", serif;
+}
+.textos p{
+    color:#870b40;
+    margin-left: 20px;
+}
+
+.catalogo{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    list-style: none; 
+    line-height:30px;
+    color:#870b40;;
+}
+.catalogo__Productos{
+    display: grid;
+    justify-content: center;
+    margin: 5px;color: white;
+}
+.catalogo__Productos img{
+    width: 250px;
+    height: 250px;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+.catalogo__Productos h3{
+    padding-left: 90px;
+    font-family:'Heebo', sans-serif ;
+    color:#870b40;
+}
+/* Quienes somos */
+header{
+    background-color: rgb(250, 210, 210);
+}
+.historia{
+    background-color: rgb(250, 210, 210);
+    margin-top: 40px;
+    color:#870b40;
+}
+
+.historia__Titulo{
+    display: flex;
+    justify-content: center;
+    background-color:#870b40;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    font-family: "Open Sans", serif;
+}
+.historia__Contenido{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.historia__Contenido p{
+    font-family: 'Heebo', sans-serif;
+    width: 40%;
+    margin-top: 100px;
+    line-height: 20px;
+    text-align: justify;
+}
+.carousel-inner {
+    display: flex;
+    margin-top: 100px;
+}
+/* Contacto */
+.contacto{
+    display: flex;
+    flex-direction: column;
+    color:#870b40;
+    margin-top: 20px;
+}
+.contacto p{
+    margin-bottom: 20px;
+    font-family: 'Heebo', sans-serif;
+}
+.contacto__Titulo{
+    display: flex;
+    justify-content: center;
+    background-color: #870b40 ;
+    color: whitesmoke;
+    font-family: "Open Sans", serif;
+    margin-bottom: 20px;
+}
+.contacto__Formulario{
+    background-color: whitesmoke;
+    width: 665px;
+    border: 2px solid black;
+    padding: 20px;
+    margin-left: 20px;
+}
+label{
+    margin-bottom: 20px;
+    font-family: 'Heebo', sans-serif;
+}
+input{
+    margin-left: 33px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+}
+textarea {
+    margin-left: 79px;
+    background-color: whitesmoke
+}
+select {
+    margin-left: 97px;
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+}
+#contacto__Formulario__Mail{
+margin-left: 122px;
+}
+#contacto__Formulario__Telefono{
+    margin-left: 20px;
+    }
+#contacto__Formulario__Enviar,#contacto__Formulario__Limpiar{
+    background-color: #4b1c33;
+    color: white;
+    padding: 5px;
+}
+#contacto_Formulario_Acepta{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+
+
